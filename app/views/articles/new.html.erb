@@ -1,0 +1,7 @@
+<h1>Ny artikkel</h1>
+
+<%= form_with model: @article, class:"grid mx-auto w-1/2" do |f| %>
+    <%= f.text_field :title, class:"border border-grey-900", placeholder: "Tittel"<h1> %>
+    <%= f.text_area :content, class:"border border-grey-900", placeholder: "Innhold" %>
+    <%= f.submit "Lagre", class:"border border-grey-900" %>
+<% end %>

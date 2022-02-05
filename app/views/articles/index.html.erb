@@ -1,0 +1,10 @@
+
+
+<%= link_to "Ny artikkel", articles_new_path %>
+
+<div class="grid">
+<% @articles.each do |article| %>
+    <%= render article %>
+    
+<% end %>
+</div>
